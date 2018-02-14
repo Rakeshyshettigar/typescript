@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" minlength="5" required /> <br />
+        <label for="mobile">Mobile Number</label>
+            <input type="tel" name="Telephone" id="TelePhone" minlength="10" required /> <br />
+         <label for="email">Email Id</label>       
+            <input type="email" name="email" id="email" required /><br />
+         <label for="MovieName">Movie Name</label>
+            <input type="text" name="movieName" id="movieName" required> <br />
+          <label for="class">Class</label>
+            <input type="radio" name="class" id="goldClass" required> Gold
+            <input type="radio" name="class" id="silverClass" required> Silver <br />
+          <label for="tickets">Ticket</label>
+            <input type="text" name="ticket" id="ticket" required /> <br />
+            <input type="submit" value="bookTicket" onclick="bookTicket()" />  
+
+
+
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

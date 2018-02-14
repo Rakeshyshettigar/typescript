@@ -19,3 +19,30 @@ function computeLoan(){
 	payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	document.getElementById('payment').innerHTML = "Monthly Payment = $"+payment;
 }
+
+
+
+var classGold = document.getElementById('goldClass');
+var classSilver = document.getElementById('silverClass');
+
+
+function bookTicket(){
+    var customerName = document.getElementById('customerName').value;
+    var phoneNumber = document.getElementById("TelePhone").value;
+    var email = document.getElementById('email').value;
+    var movieName = document.getElementById("movieName").value;
+
+    var ticket = document.getElementById("ticket").value;
+
+    alert(customerName +  "\n" + phoneNumber + "\n" +  email + "\n" + movieName + "\n" + ticket);
+}
+
+
+classGold.addEventListener('click' , function(){
+    document.getElementById("ticket").value = 300;
+
+});
+classSilver.addEventListener('click' , function(){
+    document.getElementById("ticket").value = 250;
+
+});
